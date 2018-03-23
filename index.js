@@ -32,7 +32,7 @@ function deepestChild() {
     grandNodeArr.push(document.getElementById('grand-node').querySelectorAll('div'))
     if (grandNodeArr[nodeIndex].length > nodeDepth) {
       nodeDepth = grandNodeArr[nodeIndex].length
-      maybeDeepNode = grandNodeArr[nodeDepth]
+      maybeDeepNode = grandNodeArr[nodeIndex][nodeDepth - 1]
       maybdeDeepIndex = nodeIndex
       document.getElementById('grand-node').id = nodeIndex
       nodeIndex++
