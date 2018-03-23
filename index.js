@@ -38,7 +38,7 @@ function deepestChild() {
       nodeIndex++
     }
   } while (document.getElementById('grand-node')) // while there are grand-nodes, push them on Array
-  document.getElementById(maybeDeepIndex).id = 'grand-node'
+  document.getElementById(maybeDeepIndex).id = 'grand-node' // rename the node with the deepest <div> element back to grand-node
   return maybeDeepNode
 }
   
