@@ -29,10 +29,10 @@ function deepestChild() {
   var maybeDeepNode = 0
   var maybeDeepIndex = 0
   do {
-    grandNodeArr[arr].push(document.getElementById('grand-node').querySelectorAll('div'))
+    grandNodeArr.push(document.getElementById('grand-node').querySelectorAll('div'))
     if (grandNodeArr[nodeIndex].length > nodeDepth) {
       nodeDepth = grandNodeArr[nodeIndex].length
-      maybeDeepNode = grandNodeArr[nodeDepth][nodeDepth - 1]
+      maybeDeepNode = grandNodeArr[nodeDepth]
       maybdeDeepIndex = nodeIndex
       document.getElementById('grand-node').id = nodeIndex
       nodeIndex++
